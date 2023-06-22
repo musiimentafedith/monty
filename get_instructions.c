@@ -25,7 +25,7 @@ void get_instruction(void)
 		{"pint", &_pint}, {"pop", &_pop},
 		{"swap", &_swap}, {"add", &_add},
 		{"sub", &_sub}, {"nop", &nop},
-		{NULL, NULL}
+		{"div", &_div}, {NULL, NULL}
 	};
 
 	if (arguments->n_tokens == 0) /* no instructions */
