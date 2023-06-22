@@ -18,7 +18,7 @@ void check_arguments(int argc)
  * define_arguments - Initializes a pointer to
  * arg_s structure.
  */
-void define_arguments()
+void define_arguments(void)
 {
 	arguments = malloc(sizeof(arg_t));
 	if (arguments == NULL)
