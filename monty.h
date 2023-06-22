@@ -70,11 +70,11 @@ typedef struct arg_s
 extern arg_t *arguments;
 
 void push(stack_t **stack, unsigned int line_number);
-void pop(stack_t **stack, unsigned int line_number);
+void _pop(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
-void swap(stack_t **stack, unsigned int line_number);
-void add(stack_t **stack, unsigned int line_number);
+void _swap(stack_t **stack, unsigned int line_number);
+void _add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
 void _div(stack_t **stack, unsigned int line_number);
@@ -99,7 +99,7 @@ void free_arguments(void);
 void define_arguments(void);
 int is_digit(char *str);
 void free_all_args(void);
-void delete_stack_node(void);
+void dlt_stack_node(void);
 void tokenize_line(void);
 void free_tokens(void);
 void run_instruction(void);

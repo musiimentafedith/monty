@@ -22,7 +22,8 @@ void get_instruction(void)
 	int i = 0;
 	instruction_t instructions[] = {
 		{"push", &push}, {"pall", &pall},
-		{"pint", &_pint}, {NULL, NULL}
+		{"pint", &_pint}, {"pop", &_pop},
+		{NULL, NULL}
 	};
 
 	if (arguments->n_tokens == 0) /* no instructions */
